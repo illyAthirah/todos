@@ -19,7 +19,7 @@ const todos = {
             todos = await Model.Todos.create({
                 title: req.body.title,
                 text: req.body.text,
-                CategoryId: req.params.id
+                CategoryId: req.body.CategoryId
             })
         } catch (error) {
             console.log(error)
